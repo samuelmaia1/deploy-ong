@@ -2,7 +2,7 @@ import pkg from 'pg'
 const {Pool} = pkg
 
 const pool = new Pool({
-    connectionString: 'postgresql://neondb_owner:UoQcXITb14KP@ep-fragrant-morning-a5eu99p2.us-east-2.aws.neon.tech/neondb?sslmode=require'
+    connectionString: 'postgresql://neondb_owner:UoQcXITb14KP@ep-fragrant-morning-a5eu99p2-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require'
     // user: 'postgres',
     // password: 'postgres',
     // host: 'localhost',

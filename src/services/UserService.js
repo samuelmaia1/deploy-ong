@@ -20,6 +20,7 @@ class UserService{
                 id: result.rows[0].cod_usuario
             } || null
         } catch (error) {
+            console.log(error.message)
             if (error.message.includes('duplicar valor da chave viola a restrição de unicidade')) throw new Error('Usuário com este e-mail já existe')
             throw new Error(error.message)
         }
