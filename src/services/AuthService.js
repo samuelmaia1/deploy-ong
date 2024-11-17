@@ -1,5 +1,5 @@
 import db from '../../db/db-config.js'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import TokenService from './TokenService.js';
 
 const tokenService = new TokenService()
