@@ -2,11 +2,12 @@ import pkg from 'pg'
 const {Pool} = pkg
 
 const pool = new Pool({
-    user: 'postgres',
-    password: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    database: 'ong'
+    connectionString: 'postgresql://neondb_owner:UoQcXITb14KP@ep-fragrant-morning-a5eu99p2.us-east-2.aws.neon.tech/neondb?sslmode=require'
+    // user: 'postgres',
+    // password: 'postgres',
+    // host: 'localhost',
+    // port: 5432,
+    // database: 'ong'
 })
 
 const query = async (queryString, params) => {
